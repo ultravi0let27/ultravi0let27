@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Awesome Website</title>
+  <style>
+    /* Import a cool font from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+    /* Define a fun, color-changing animation */
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      color: #FFFFFF;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient-animation 15s ease infinite;
+      text-align: center;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+      padding: 20px 40px;
+      display: inline-block;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 50px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .fun-fact {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 5px solid #FFFFFF;
+      font-style: italic;
+    }
+    
+    img {
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+
+  </style>
 </head>
 <body>
-  <h1>My Website is Working!</h1>
-  <p>Congratulations, you have successfully published a website for free using GitHub Pages.</p>
+
+  <div class="container">
+    <h1>It's Working!</h1>
+    <p>This page now has styling (CSS) and more content.</p>
+    <p>This entire website is just a single text file being served to the world, for free, by GitHub.</p>
+
+    <div class="fun-fact">
+      <p><strong>Fun Fact:</strong> The moving background is a CSS animation. It's a gradient that shifts its position over time, creating a smooth, colorful effect.</p>
+    </div>
+
+    <!-- This is a fun image of a cat programmer -->
+    <img src="https://octodex.github.com/images/codercat.jpg" alt="A cat wearing a hoodie and typing on a laptop">
+  </div>
+
 </body>
 </html>
